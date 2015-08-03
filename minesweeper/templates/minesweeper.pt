@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="${request.static_url('minesweeper:static/pyramid-16x16.png')}">
+
+    <title>Starter Scaffold for The Pyramid Web Framework</title>
+
+    <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${request.static_url('minesweeper:static/theme.css')}" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <table align="center" class="field" id="field">
+      <tr tal:repeat="row field" id="row">
+        <td tal:repeat="cell row" cell_x="${cell.x}" cell_y="${cell.y}" oncontextmenu="flag_cell(this)" onclick="open_cell(this)" >
+          <div tal:condition="python: cell['isRevealed']==False and cell['isFlagged']==False" class="cell verticalCenter cellUnknown"></div>
+          <div tal:condition="python: cell['isRevealed']==False and cell['isFlagged']==True" class="cell verticalCenter cellFlagged"></div>
+          <div tal:condition="python: cell['isRevealed']==True and cell['isMine']==False and cell['mineCount']==0" class="cell verticalCenter cellRevealed"></div>
+          <div tal:condition="python: cell['isRevealed']==True and cell['isMine']==False and cell['mineCount']>0" class="cell verticalCenter cellMineNumber">${cell['mineCount']}</div>
+          <div tal:condition="python: cell['isRevealed']==True and cell['isMine']==True" class="cell verticalCenter cellgg"></div>
+        </td>
+      </tr>
+    </table>
+    <div id="gg">lel</div>
+    <button type="button" onclick="new_game()">New Game</button>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${request.static_url('minesweeper:static/minesweeper.js')}">
+  </body>
+</html>

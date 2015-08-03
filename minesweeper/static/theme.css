@@ -1,0 +1,236 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background: #bc2131;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+p {
+  font-weight: 300;
+}
+.font-normal {
+  font-weight: 400;
+}
+.font-semi-bold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+.starter-template {
+  margin-top: 250px;
+}
+.starter-template .content {
+  margin-left: 10px;
+}
+.starter-template .content h1 {
+  margin-top: 10px;
+  font-size: 60px;
+}
+.starter-template .content h1 .smaller {
+  font-size: 40px;
+  color: #f2b7bd;
+}
+.starter-template .content .lead {
+  font-size: 25px;
+  color: #f2b7bd;
+}
+.starter-template .content .lead .font-normal {
+  color: #ffffff;
+}
+.starter-template .links {
+  float: right;
+  right: 0;
+  margin-top: 125px;
+}
+.starter-template .links ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.starter-template .links ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 10px;
+}
+.starter-template .links ul li:first-child {
+  margin-left: 0;
+}
+.starter-template .links ul li:last-child {
+  margin-right: 0;
+}
+.starter-template .links ul li.current-version {
+  color: #f2b7bd;
+  font-weight: 400;
+}
+.starter-template .links ul li a {
+  color: #ffffff;
+}
+.starter-template .links ul li a:hover {
+  text-decoration: underline;
+}
+.starter-template .links ul li .icon-muted {
+  color: #eb8b95;
+  margin-right: 5px;
+}
+.starter-template .links ul li:hover .icon-muted {
+  color: #ffffff;
+}
+.starter-template .copyright {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #f2b7bd;
+  text-transform: lowercase;
+  float: right;
+  right: 0;
+}
+@media (max-width: 1199px) {
+  .starter-template .content h1 {
+    font-size: 45px;
+  }
+  .starter-template .content h1 .smaller {
+    font-size: 30px;
+  }
+  .starter-template .content .lead {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .starter-template {
+    margin-top: 0;
+  }
+  .starter-template .logo {
+    margin: 40px auto;
+  }
+  .starter-template .content {
+    margin-left: 0;
+    text-align: center;
+  }
+  .starter-template .content h1 {
+    margin-bottom: 20px;
+  }
+  .starter-template .links {
+    float: none;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .starter-template .copyright {
+    float: none;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .starter-template .content h1 .smaller {
+    font-size: 25px;
+    display: block;
+  }
+  .starter-template .content .lead {
+    font-size: 16px;
+  }
+  .starter-template .links {
+    margin-top: 40px;
+  }
+  .starter-template .links ul li {
+    display: block;
+    margin: 0;
+  }
+  .starter-template .links ul li .icon-muted {
+    display: none;
+  }
+  .starter-template .copyright {
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EVERYTHING ABOVE CAME BY DEFAULT. I like the base design so I'm keeping them. */
+.field {
+  margin-top: 50px;
+  border-collapse: collapse;
+  background-color: rgba(225, 225, 225, 0.8);
+}
+.field td {
+  border: 1px solid #bc2131;
+  width: 25px;
+  height: 25px;
+}
+
+table, td {
+  padding: 0;
+  border-spacing: 0;
+  font-family: Arial, "Times New Roman", Verdana;
+  font-size: 13px;
+  color: #444;
+}
+
+.cell{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.verticalCenter{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.cellRevealed, .cellMineNumber{
+  background-color: #FFF;
+}
+
+.cellFlagged{
+  background-color: #F7D358;
+}
+
+.cellgg{
+  background-color: #FF4000;
+}
+
+.cellUnknown{
+  background-color: transparent;
+}
+
+#gg{
+  display: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: absolute;
+  top: 0px;
+  font-size: 8em;
+  font-weight: bold;
+}

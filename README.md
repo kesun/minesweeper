@@ -1,6 +1,6 @@
 MineSweeper README
 
-LIVE DEMO: http://ke-minesweeper.herokuapp.com/
+LIVE DEMO: http://mine-sweeper.herokuapp.com/
 
 Or, if you choose to set it up locally...
 
